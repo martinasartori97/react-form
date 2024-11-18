@@ -12,13 +12,12 @@ const articles = [
 function App() {
 
 
-
-
   function addArticle(e) {
     e.preventDefault()
     console.log(articles);
 
   }
+
 
 
 
@@ -30,13 +29,19 @@ function App() {
 
   }
 
+  function handleButtonOnClick() {
+    console.log('mostrare gli articoli');
+
+
+  }
+
   return (
     <>
       <div className="container">
         <h1> React Blog Form</h1>
         <p>insert the title</p>
         <input type="text" title='title' id='title' value={title} onChange={e => setTitle(e.target.value)} />
-        <button type='submit'>send</button>
+        <button onClick={handleButtonOnClick}>send</button>
 
         <ul className="list-group">
           {articles.map((article, index) => <li key={index} className="list-group-item">{article}</li>)}
