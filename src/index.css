@@ -11,3 +11,7 @@ h1 {
 p {
   padding-bottom: 1rem;
 }
+
+.list-group {
+  padding-top: 1rem;
+}
