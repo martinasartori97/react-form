@@ -1,13 +1,24 @@
 import { useState } from 'react'
 import './App.css'
 
+
+const articles = [
+  'php',
+  'javascript',
+  'laravel',
+  'react',
+];
+
 function App() {
-  const articles = [
-    'php',
-    'javascript',
-    'laravel',
-    'react',
-  ];
+
+
+
+
+  function addArticle(e) {
+    e.preventDefault()
+    console.log(articles);
+
+  }
 
 
 
